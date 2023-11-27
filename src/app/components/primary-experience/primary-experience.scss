@@ -1,0 +1,31 @@
+.section {
+    margin-top: 20px;
+    background-color: transparent;
+    border:1px solid #fff;
+    padding:15px;
+    border-radius: 5px;
+    margin-bottom: 80px;
+}
+
+.title-position {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.date-position {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+p {
+    font-size: 16px;
+    //line-height: 40px;
+    width:100%;
+    text-align: justify;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+

@@ -38,7 +38,9 @@ export function Start(){
         </div>
 
         <OthersExperience/>
-        
+
         </div>
+
+        
     )
 }
