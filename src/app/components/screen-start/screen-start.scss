@@ -1,0 +1,48 @@
+.container-page {
+    width:80vw;
+    height:100vh;
+    align-items: center !important;
+    justify-content: center !important;
+
+    .box-experience {
+        padding-top:25px;
+        display:flex;
+        height:35%;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .box-education {
+            align-items: flex-end;
+            display: block;
+        }
+        
+        .title-skills {
+            font-size: 25px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+    .box-social {
+        justify-content:end;
+        padding-top: 15px;
+        display: flex;
+    }
+
+
+}
+
+    @media (max-width: 800px) {
+        .box-experience {
+            flex-direction: column;
+            height:750px;
+        }
+
+        .box-other-experience {
+            flex-direction: column;
+            margin-top:20px;
+            padding-top:15px;
+            display:flex;
+        }
+    }
+
+}

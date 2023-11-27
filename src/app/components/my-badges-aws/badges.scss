@@ -1,0 +1,27 @@
+.badges {
+    padding-top:10px;
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+    display: flex;
+    color: var(--text-primary);
+    
+    .image-primary {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .image-secondary {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    img { display: flex;
+       // align-items: center;
+        justify-content: flex-end;
+    }
+}

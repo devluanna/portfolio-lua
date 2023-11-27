@@ -1,17 +1,17 @@
 import Image from 'next/image'
 
+//Components
+import { Start } from './components/screen-start/screen-start'
+
+//Styles home
+import "./styles-home/home.scss"
+
 export default function Home() {
   return (
-    <main>
+    <main className="home-container">
 
-        <Image
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-    
+      <Start/>
+
     </main>
   )
 }

@@ -1,0 +1,53 @@
+.my-technologies {
+    display: flex;
+    padding-top:5px;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom:10px;
+
+    .container-experience {
+        width: 320px;
+        height: 35px;
+        border: 1px solid #fff;
+        display: flex;
+        border-radius:5px;
+        justify-content: flex-start;
+        align-items: center;
+
+        .experience-level {
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #fff;
+            background: #fff;
+            color: #2C2C2C;
+            font-weight: 300;
+            text-align: center;
+            border-radius:5px;
+            font-weight: 500;
+            font-size: 14px;
+
+            &.level-1 {
+                width: 45%;
+            }
+
+            &.level-2 {
+                width: 33%;
+            }
+
+            &.level-3 {
+                width: 80%;
+            }
+
+            &.level-4 {
+                width: 100%;
+            }
+
+            &.level-5 {
+                width: 100%;
+            }
+        }
+    }
+}

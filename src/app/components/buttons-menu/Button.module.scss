@@ -1,0 +1,47 @@
+.button {
+    border: none;
+    cursor: pointer;
+    margin-top: 7px;
+    justify-content: center;
+    margin-right: 10px;
+    align-items: center;
+    :hover {
+      opacity: 0.8;
+    }
+  }
+  
+  .certificate {
+    background:transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    justify-content: center;
+    font-weight: 900;
+    width:33px;
+    height:30px;
+    border-radius:2px;
+  }
+  
+  .about {
+    background:transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    justify-content: center;
+    width:33px;
+    height:30px;
+    border-radius:2px;
+  }
+
+  .home {
+    background:transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    justify-content: center;
+    width:33px;
+    height:30px;
+    border-radius:2px;
+  }
+
+  .default {
+    background-color: #bebebe;
+  }
+  
