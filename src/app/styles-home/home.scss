@@ -8,6 +8,16 @@
     grid-template-areas: 
     "start";
 
+    .btn-button {
+      width:170px;
+      display: flex;
+      justify-content: space-between;
+      padding-left:8px;
+      background:transparent;
+      border:1px solid #2C2C2C;
+      border-radius:10px;
+    }
+
     .scroll-indicator {
         cursor: pointer;
         font-size: 35px;
@@ -28,8 +38,12 @@
         background: linear-gradient(90deg, rgba(38,46,255,1) 0%, rgba(124,145,188,1) 46%, rgba(212,244,119,1) 100%);
       }
 
-      @media (max-width: 800px) {
-        gap: 300px;
+      @media (min-width: 200px) and (max-width:690px) {
+        gap: 600px;
     }
-    
+
+    @media (min-width: 700px) and (max-width: 950px) {
+      gap: 200px;
+  }
+
 }

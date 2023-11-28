@@ -9,9 +9,9 @@ export function MyExperience(){
                 My experiences
             </div>
         
-                <SecondaryExperience/>
+               
                 <PrimaryExperience/>
-     
+                <SecondaryExperience/>
         </div>
     )
 }

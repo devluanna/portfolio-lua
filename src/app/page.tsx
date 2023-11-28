@@ -1,38 +1,37 @@
-'use client'
+'use client';
+
 import Image from 'next/image'
 
-//Components
-import { Start } from './components/screen-start/screen-start'
-
-//Styles home
-import "./styles-home/home.scss"
 import { FaChevronDown } from 'react-icons/fa';
+import { Start } from './components/screen-start/screen-start';
 import { MyExperience } from './components/my-experiences/my-experience';
-
+import { Projects } from './components/my-projects/projects';
+import "./styles-home/home.scss";
 
 export default function Home() {
-  const scrollToExperiences = () => {
-    const experiencesSection = document.getElementById('experiences-section');
-    if (experiencesSection) {
-      experiencesSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
+  
   return (
     <main className="home-container">
+      <Start />
 
-      <Start/>
-
-      <div className="scroll-indicator" onClick={scrollToExperiences}>
+      <div className="scroll-indicator" onClick={() => scrollToSection('experiences-section')}>
         <FaChevronDown />
       </div>
 
       <div id="experiences-section">
-    <MyExperience/>
-    </div>
+      <MyExperience />
+      </div>
 
-    <div className='footer-gradient'></div>
+      <div id="projects-section">
+      <Projects />
+      </div>
 
     </main>
-  )
+  );
 }

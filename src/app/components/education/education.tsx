@@ -7,8 +7,8 @@ export function Education(){
         Education
 
         <div className="education-description">
-        <p>Graduated in Systems Analysis and Development</p>
-        <p>- (UNOPAR) Northern University of Paraná</p>
+        Graduated in Systems Analysis and Development
+        - (UNOPAR) Northern University of Paraná
         </div>
 
         </div>

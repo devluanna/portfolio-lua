@@ -1,0 +1,43 @@
+.container-page {
+    width:80vw;
+    height:100vh;
+    position: relative;
+
+.title-page {
+    padding-top: 35px;
+    font-size: 37px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+}
+
+.page-projects {
+    height:75%;
+    overflow-x: hidden;
+    position: relative;
+    &::-webkit-scrollbar {
+        width: 10px;
+      }
+    
+      
+      &::-webkit-scrollbar-track {
+        background: #fff;
+        
+      }
+    
+     
+      &::-webkit-scrollbar-thumb {
+        background: #1E1E1E;
+      }
+    
+    
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+
+  
+
+    
+}
+

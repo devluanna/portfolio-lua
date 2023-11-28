@@ -1,0 +1,59 @@
+     //  background-color: #FFC61A;
+      //  background-color: #e34c26; 
+      //background-color: #563D7C; 
+
+      // nivel-tech.scss
+.container-level {
+    width: 320px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    .level-tech {
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #2c2c2c;
+      font-weight: 300;
+      text-align: center;
+      font-size: 14px;
+      border-radius: 3px;
+  
+      $width: 100%; 
+      $color: #FFC61A;
+  
+      &.level-1 {
+        width: $width;
+        background-color: $color;
+      }
+  
+      &.level-2 {
+        width: $width;
+        background-color: $color;
+      }
+  
+      &.level-3 {
+        width: $width;
+        background-color: $color;
+      }
+  
+
+      @each $level in 1, 2, 3 {
+        &.level-#{$level} {
+          width: #{map-get(("level-1": "93.3%", "level-2": "3.8%", "level-3": "2.9%"), "level-#{$level}")};
+          background-color: #{map-get(("level-1": "#FFC61A", "level-2": "#e34c26", "level-3": "#563D7C"), "level-#{$level}")};
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .container-level {
+      display: flex;
+      width:140px;
+      height: 20px;
+    }
+    
+}
