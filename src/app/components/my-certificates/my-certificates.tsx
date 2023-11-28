@@ -1,0 +1,51 @@
+'use client'
+
+//Styles
+import "./my-certificates.scss"
+
+//Components
+import Button from "../buttons-menu/Button";
+import BoxHeader from "../info/box-header"
+import { CertificateOne } from "../my-all-certificates/certificate-one/certificate-one";
+import { CertificateTwo } from "../my-all-certificates/certificate-two/certificate-two";
+import { CertificateThree } from "../my-all-certificates/certificate-three/certificate-three";
+import { CertificateFour } from "../my-all-certificates/certificate-four/certificate-four";
+import { CertificateFive } from "../my-all-certificates/certificate-five/certificate-five";
+import { CertificateSix } from "../my-all-certificates/certificate-six/certificate-six";
+import { CertificateSeven } from "../my-all-certificates/certificate-seven/certificate-seven";
+import { CertificateEighth } from "../my-all-certificates/certificate-eighth/certificate-eighth";
+
+export function MyCertificates(){
+    const handleButtonClick = (type: string) => {
+    
+      };
+    
+    return(
+
+        <BoxHeader onButtonClick={handleButtonClick} width="100%" height="800px" label="myCertificates.exe">
+         <div className="container-certificates">
+
+         <div className="titles-certificates">
+          <div className="title-page-certificates">Certificates</div>
+          
+          <h2>and courses</h2> </div>
+
+        
+          <div className="box-one">
+            <CertificateOne/>
+            <CertificateEighth/>
+            <CertificateSix/>
+            <CertificateFour/>
+            </div>
+            <div className="box-two">
+            <CertificateFive/>
+            <CertificateThree/>
+            <CertificateSeven/>
+            <CertificateTwo/>
+            </div>
+           </div>
+         
+         
+        </BoxHeader>
+    )
+};

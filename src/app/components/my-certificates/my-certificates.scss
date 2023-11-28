@@ -1,0 +1,102 @@
+.container-certificates{
+    width:80%;
+    height:800px;
+    display: grid;
+    position: absolute;
+    grid-template-columns: 50% 50%;
+ 
+
+    .title-page-certificates {  
+        display: grid;
+        font-weight: 600;
+        height: fit-content;
+        margin-top: 20px;
+        font-size:35px;
+        color: var(--text-primary);
+    }
+
+    h2 {
+        display: grid;
+        font-weight: 400;
+        font-size: 26px;
+        color: var(--text-secondary);
+}
+
+.titles-certificates {
+        padding-left: 40px;
+        padding-top:30px;
+ }
+
+ .box-one {
+        display: grid;
+        grid-column: 1;
+
+  }
+ 
+  .box-two {
+        display: grid;
+        grid-column: 2;
+  }
+ 
+
+    .experience-time {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 8px;
+            img {
+                    border:none;
+            }
+        }
+
+
+            @media (max-width: 1600px) {
+                       width:80%;
+                       display: flex;
+                       flex-direction: column;
+                       height:750px;
+                       overflow-x: hidden;
+                       z-index: 999;
+                       &::-webkit-scrollbar {
+                        width: 10px;
+                      }
+                    
+                
+                      &::-webkit-scrollbar-track {
+                        background: transparent;
+                        
+                      }
+    
+                      &::-webkit-scrollbar-thumb {
+                        background: transparent;
+                        padding-top:120px;
+                      }
+                    
+                      &::-webkit-scrollbar-thumb:hover {
+                        background: transparent;
+                      }
+
+
+                    .titles {
+                            padding-left: 5px;
+                     }
+
+                     .title-page-certificates {  
+                        display: grid;
+                        font-weight: 600;
+                        height: fit-content;
+                        margin-top: 40px;
+                        font-size:26px;
+                        color: var(--text-primary);
+                    }
+                
+                    h2 {
+                        display: grid;
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: var(--text-secondary);
+                }
+                }
+                         
+}

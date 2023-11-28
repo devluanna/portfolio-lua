@@ -6,7 +6,7 @@ export function MyExperience(){
     return (
         <div className="container-page">
             <div className="title-page">
-                My experiences
+            My professional experiences
             </div>
         
                

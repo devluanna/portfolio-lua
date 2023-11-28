@@ -25,25 +25,46 @@
         position: fixed; 
         bottom: 20px;
         left: 50%; 
-        transform: translateX(-50%); 
+        transform: translateX(-50%);
+  
     
         &:hover {
           color: #fff;
         }
       }
 
-      .footer-gradient {
-        height:20px;
-        width:100%;
-        background: linear-gradient(90deg, rgba(38,46,255,1) 0%, rgba(124,145,188,1) 46%, rgba(212,244,119,1) 100%);
+
+      .scroll-top {
+        transform: rotate(180deg);
+        cursor: pointer;
+        font-size: 35px;
+        color: #333;
+        bottom: 20px;
+        display: flex;
+        left: 50%;
+        
+    
+        &:hover {
+          color: #fff;
+        }
       }
 
-      @media (min-width: 200px) and (max-width:690px) {
-        gap: 600px;
-    }
+  
 
-    @media (min-width: 700px) and (max-width: 950px) {
-      gap: 200px;
+   // @media (min-width:100px) and (max-width:800px){
+  //    gap: 820px;
+ 
+ // }
+
+ @media (min-width:100px) and (max-width:800px){
+  gap: 320px;
+
+}
+
+    @media (min-width:801px) and (max-width:1366px){
+      gap: 300px;
+    
   }
+ 
 
 }

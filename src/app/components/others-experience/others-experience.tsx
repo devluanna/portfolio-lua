@@ -10,6 +10,7 @@ export function OthersExperience(){
 
         <div className="box-geral">
         <div className="more-experience">
+        <p>Springboot</p>
         <p>Next.JS</p>
         <p>Typescript</p>
         <p>Angular</p>

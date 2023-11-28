@@ -1,7 +1,7 @@
-.container-page {
+.container-page-projects {
     width:80vw;
     height:100vh;
-    position: relative;
+
 
 .title-page {
     padding-top: 35px;
@@ -15,7 +15,6 @@
 .page-projects {
     height:75%;
     overflow-x: hidden;
-    position: relative;
     &::-webkit-scrollbar {
         width: 10px;
       }
@@ -36,8 +35,32 @@
         background: #555;
       }
 
+      @media (min-width: 100px) and (max-width: 525px) {
+        flex-direction: column;
+        margin-top: 580px;
   
+      }
 
-    
+      @media (min-width: 526px) and (max-width: 649px) {
+        flex-direction: column;
+        margin-top: 450px;
+      }
+
+      @media (min-width: 650px) and (max-width: 850px) {
+        flex-direction: column;
+        margin-top: 290px;
+      }
+
+      
+      @media (min-width: 1350px) and (max-width: 1380px) {
+        flex-direction: column;
+        margin-top: 220px;
+      }
+
+      @media (min-width: 1400px) and (max-width: 1500px) {
+        flex-direction: column;
+        margin-top: 100px;
+      }
+  
 }
 

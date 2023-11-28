@@ -8,13 +8,12 @@ import "./projects.scss"
 
 export function Projects(){
     return (
-        <div className="container-page">
-
-            <div className="title-page">
-                Projects on Git Hub
-            </div>
+        <div className="container-page-projects">
             
         <div className="page-projects">
+        <div className="title-page">
+                Projects on Git Hub
+            </div>
         <ProjectSix/>
         <ProjectFive/>
         <ProjectFour/>
