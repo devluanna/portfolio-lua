@@ -5,7 +5,7 @@ import { LabelTag } from "../../label-tag/label-tag";
 export function CertificateFive(){
     return(
 
-      <div className="box-page-certificate">
+      <a href="https://www.cursoemvideo.com/certificates/certificado/?course_id=25487&cert-nonce=20b0c549ca" className="box-page-certificate">
         <div className="box-section-certificate">
 
         <div className="title-certificate">   
@@ -22,7 +22,7 @@ export function CertificateFive(){
      
         </div>
         </div>
-        </div>
+        </a>
    
     )
 }

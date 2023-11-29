@@ -12,7 +12,7 @@ export function CertificateFour(){
         Essential HTML and CSS - Complete Front End for Beginners
 
         <div className="position-icon">
-          <ExpandIcon/></div>
+          </div>
         
       
         </div>

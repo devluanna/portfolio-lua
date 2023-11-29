@@ -9,7 +9,8 @@ import { CertificateFour } from "../my-all-certificates/certificate-four/certifi
 import { CertificateFive } from "../my-all-certificates/certificate-five/certificate-five";
 import { CertificateSix } from "../my-all-certificates/certificate-six/certificate-six";
 import { CertificateSeven } from "../my-all-certificates/certificate-seven/certificate-seven";
-import { CertificateEighth } from "../my-all-certificates/certificate-eighth/certificate-eighth";
+import { CertificateEight } from "./certificate-eight/certificate-eight";
+
 
 export function AllCertificates(){
     const handleButtonClick = (type: string) => {
@@ -21,7 +22,7 @@ export function AllCertificates(){
           <div className="page-projects">
           <div className="box-one">
             <CertificateOne/>
-            <CertificateEighth/>
+            <CertificateEight/>
             <CertificateSix/>
             <CertificateFour/>
             </div>

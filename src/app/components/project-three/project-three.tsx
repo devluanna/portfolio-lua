@@ -2,7 +2,7 @@ import ExpandIcon from "../icon-expand/icon-expand"
 import { LabelTag } from "../label-tag/label-tag";
 import { LegendLanguage } from "../legend-language/legend-languaga";
 import { NivelTech } from "../nivel-tech/nivel-tech"
-import "./project-three.scss"
+
 
 const levelsData = [
     { level: 1, width: '100%', color: '#A8531E' },
@@ -38,7 +38,7 @@ export function ProjectThree(){
       <LegendLanguage color="#A8531E" label="Java 100%" />
       </div>
 
-      <div className="btn-button">view repository  <ExpandIcon/></div>
+      <a  href="https://github.com/devluanna/santander-dev-week-2023" className="btn-button">view repository  <ExpandIcon/></a>
    
         </div>
    

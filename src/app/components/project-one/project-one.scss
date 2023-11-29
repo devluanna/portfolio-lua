@@ -3,16 +3,28 @@
     background-color: #fff;
     border:1px solid #fff;
     padding:15px;
+    width: 98%;
     border-radius: 5px;
     margin-bottom: 80px;
+    
 }
 
+a {
+    color:#fff;
+    text-decoration: none;
+}
 .title-project {
     display: flex;
     font-size: 18px;
+    width:100%;
     font-weight: 500;
     color: #2F2F2F;
 }
+
+.box-labels {
+    display: flex;
+}
+
 
 .box-general {
     justify-content: space-between;
@@ -63,6 +75,12 @@
         display: flex;
         justify-self: flex-end;
         align-items: flex-end;
+    }
+
+    .box-labels {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
     }
     
 }

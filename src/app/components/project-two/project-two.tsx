@@ -2,7 +2,6 @@ import ExpandIcon from "../icon-expand/icon-expand"
 import { LabelTag } from "../label-tag/label-tag";
 import { LegendLanguage } from "../legend-language/legend-languaga";
 import { NivelTech } from "../nivel-tech/nivel-tech"
-import "./project-two.scss"
 
 const levelsData = [
     { level: 1, width: '97.2%', color: '#FFC61A' },
@@ -39,7 +38,7 @@ export function ProjectTwo(){
       <LegendLanguage color="#563D7C" label="CSS 0.8%" />
       </div>
 
-      <div className="btn-button">view repository  <ExpandIcon/></div>
+      <a  href="https://github.com/devluanna/reactgram-front" className="btn-button">view repository  <ExpandIcon/></a>
    
         </div>
    

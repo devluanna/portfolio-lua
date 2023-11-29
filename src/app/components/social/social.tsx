@@ -20,7 +20,7 @@ export function Social(){
             <a href="">
                 <EmailIconSocial/>
             </a>
-            <a href="https://www.instagram.com/kipper.dev/">
+            <a href="https://www.instagram.com/luluanalves/">
                 <InstagramIconSocial/>
             </a>
         </div>

@@ -13,7 +13,7 @@ import { CertificateFour } from "../my-all-certificates/certificate-four/certifi
 import { CertificateFive } from "../my-all-certificates/certificate-five/certificate-five";
 import { CertificateSix } from "../my-all-certificates/certificate-six/certificate-six";
 import { CertificateSeven } from "../my-all-certificates/certificate-seven/certificate-seven";
-import { CertificateEighth } from "../my-all-certificates/certificate-eighth/certificate-eighth";
+import { CertificateEight } from "../my-all-certificates/certificate-eight/certificate-eight";
 
 export function MyCertificates(){
     
@@ -29,7 +29,7 @@ export function MyCertificates(){
         
           <div className="box-one">
             <CertificateOne/>
-            <CertificateEighth/>
+            <CertificateEight/>
             <CertificateSix/>
             <CertificateFour/>
             </div>

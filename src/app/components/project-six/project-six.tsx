@@ -4,12 +4,12 @@ import LabelTagGradient from "../label-tag-gradient/label-tag-gradient";
 import { LabelTag } from "../label-tag/label-tag";
 import { LegendLanguage } from "../legend-language/legend-languaga";
 import { NivelTech } from "../nivel-tech/nivel-tech"
-import "./project-six.scss"
+
 
 const levelsData = [
-    { level: 1, width: '54.1%', color: '#3171BC' },
-    { level: 2, width: '44.7%', color: '#C5528A' },
-    { level: 3, width: '1.02%', color: '#FFC61A' },
+    { level: 1, width: '59.2%', color: '#3171BC' },
+    { level: 2, width: '40.7%', color: '#C5528A' },
+    { level: 3, width: '0.1%', color: '#FFC61A' },
   ];
 
 export function ProjectSix(){
@@ -43,12 +43,12 @@ export function ProjectSix(){
       </div>
       <div className="legends-techs">
 
-      <LegendLanguage color="#3171BC" label="Typescript 54.1%" />
-      <LegendLanguage color="#C5528A" label="SCSS 45.7%" />
-      <LegendLanguage color="#FFC61A" label="Javascript 0.2%" />
+      <LegendLanguage color="#3171BC" label="Typescript 59.2" />
+      <LegendLanguage color="#C5528A" label="SCSS 40.7%" />
+      <LegendLanguage color="#FFC61A" label="Javascript 0.1%" />
       </div>
 
-      <div className="btn-button">view repository  <ExpandIcon/></div>
+      <a  href="https://github.com/devluanna/portfolio-lua" className="btn-button">view repository  <ExpandIcon/></a>
    
         </div>
    

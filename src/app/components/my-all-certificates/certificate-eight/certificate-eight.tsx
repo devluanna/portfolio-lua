@@ -2,7 +2,7 @@ import ExpandIcon from "../../icon-expand/icon-expand"
 import { LabelTag } from "../../label-tag/label-tag";
 
 
-export function CertificateEighth(){
+export function CertificateEight(){
     return(
 
       <div className="box-page-certificate">

@@ -5,7 +5,7 @@ import "./certificate-one.scss"
 export function CertificateOne(){
     return(
 
-      <div className="box-page-certificate">
+      <a href="https://www.credly.com/badges/30bef1ae-3182-4599-946a-793ce88e5510" className="box-page-certificate">
         <div className="box-section-certificate">
 
         <div className="title-certificate">   
@@ -23,7 +23,7 @@ export function CertificateOne(){
      
         </div>
         </div>
-        </div>
+        </a>
    
     )
 }

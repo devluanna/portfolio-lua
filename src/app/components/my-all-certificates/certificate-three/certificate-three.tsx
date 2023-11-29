@@ -4,7 +4,7 @@ import { LabelTag } from "../../label-tag/label-tag";
 export function CertificateThree(){
     return(
 
-      <div className="box-page-certificate">
+      <a href="https://www.udemy.com/certificate/UC-00bf0840-62b8-4fb7-bd5c-5d88b0e117ca/" className="box-page-certificate">
         <div className="box-section-certificate">
 
         <div className="title-certificate">   
@@ -22,7 +22,7 @@ export function CertificateThree(){
      
         </div>
         </div>
-        </div>
+        </a>
    
     )
 }

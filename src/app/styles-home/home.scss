@@ -13,9 +13,13 @@
       display: flex;
       justify-content: space-between;
       padding-left:8px;
-      background:transparent;
+      background:#2C2C2C;
       border:1px solid #2C2C2C;
       border-radius:10px;
+
+      a {
+        color:#fff;
+      }
     }
 
 

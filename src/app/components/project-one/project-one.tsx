@@ -40,7 +40,7 @@ export function ProjectOne(){
       <LegendLanguage color="#563D7C" label="CSS 2.9%" />
       </div>
 
-      <div className="btn-button">view repository  <ExpandIcon/></div>
+      <a  href="https://github.com/devluanna/miniBlog" className="btn-button">view repository  <ExpandIcon/></a>
    
         </div>
    

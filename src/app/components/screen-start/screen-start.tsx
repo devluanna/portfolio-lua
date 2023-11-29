@@ -52,12 +52,6 @@ export function Start() {
     }
   };
 
-  const showContentDefault = () => {
-    if (componentType === 'certificate') {
-      setShowDefaultContent(false);
-    }
-  }
-
   useEffect(() => {
     if (componentType === 'certificate' || componentType === 'about') {
       setShowDefaultContent(false);
