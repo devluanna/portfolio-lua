@@ -1,5 +1,5 @@
 // Components
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { Education } from "../education/education"
 import { Experience } from "../experience-time/experience-time"
@@ -18,56 +18,83 @@ import { Informations } from '../informations/informations';
 
 
 export function Start() {
-    const [componentType, setComponentType] = useState<string | null>(null);
-    const [showDefaultContent, setShowDefaultContent] = useState(true);
   
-    const handleButtonClick = (type: string) => {
-      setComponentType(type);
-      setShowDefaultContent(false); // Oculta o conteúdo padrão quando um botão é clicado
-    };
-  
-    const renderDynamicComponent = () => {
-      switch (componentType) {
-        case 'certificate':
-          return <MyCertificates />;
-        case 'about':
-          return <Projects />;
-        case 'home':
-          return <Start />;
-        default:
-          return null;
-      }
-    };
-  
-    return (
-      <div className="container-page">
-        {showDefaultContent && (
-          <>
-            <BoxHeader onButtonClick={handleButtonClick} width="100%" height="320px" label="developer.exe">
-              <Informations />
-            </BoxHeader>
-  
-            <div className="box-experience">
-              <div className="title-skills">
-                Full Stack Skills
-                <Experience />
-              </div>
-  
-              <div className="box-education">
-                <Education />
-                <Bagdes />
-  
-                <div className="box-social">
-                  <Social />
-                </div>
+  const [componentType, setComponentType] = useState<string | null>('home');
+  const [showDefaultContent, setShowDefaultContent] = useState(true);
+  const [selectedButtonType, setSelectedButtonType] = useState<string | null>('home');
+  const [boxHeaderLabel, setBoxHeaderLabel] = useState<string>('developer.exe');
+
+  const [boxHeaderHeight, setBoxHeaderHeight] = useState<string>('320px');
+
+
+  const handleButtonClick = (type: string, label?: string, height?: string) => {
+    setComponentType(type);
+    setSelectedButtonType(type);
+    if (label) {
+      setBoxHeaderLabel(label);
+    }
+    if (height) {
+      setBoxHeaderHeight(height);
+    }
+    
+  };
+
+  const showContentDefault = () => {
+    if(componentType == 'certificate' || componentType == 'about' ) {
+      setShowDefaultContent(false);
+    }
+  }
+
+  useEffect(() => {
+    showContentDefault();
+  }, [componentType]);
+
+
+  const renderDynamicComponent = () => {
+    switch (componentType) {
+      case 'certificate':
+        return <MyCertificates />;
+      case 'about':
+        return <Projects />;
+      case 'home':
+      default:
+        return <Informations />;
+    }
+  };
+
+  return (
+    <div className="container-page">
+      
+      <BoxHeader
+      onButtonClick={(type, label, height) => handleButtonClick(type, label, height)}
+      selectedButtonType={selectedButtonType}
+      width="100%"
+      height={boxHeaderHeight}
+      label={boxHeaderLabel}>
+      {renderDynamicComponent()}
+     </BoxHeader>
+
+     {showDefaultContent && (
+        <>
+          <div className="box-experience">
+            <div className="title-skills">
+              Full Stack Skills
+              <Experience />
+            </div>
+
+            <div className="box-education">
+              <Education />
+              <Bagdes />
+
+              <div className="box-social">
+                <Social />
               </div>
             </div>
-  
-            <OthersExperience />
-          </>
-        )}
-  
-        {renderDynamicComponent()}
-      </div>
-    );
-  }
+          </div>
+
+          <OthersExperience />
+        </>
+      )}
+    </div>
+  );
+}

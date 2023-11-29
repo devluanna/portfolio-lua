@@ -2,7 +2,7 @@
 
 //Styles
 import "./my-certificates.scss"
-
+import { useState } from 'react';
 //Components
 import Button from "../buttons-menu/Button";
 import BoxHeader from "../info/box-header"
@@ -16,15 +16,11 @@ import { CertificateSeven } from "../my-all-certificates/certificate-seven/certi
 import { CertificateEighth } from "../my-all-certificates/certificate-eighth/certificate-eighth";
 
 export function MyCertificates(){
-    const handleButtonClick = (type: string) => {
-    
-      };
     
     return(
 
-        <BoxHeader onButtonClick={handleButtonClick} width="100%" height="800px" label="myCertificates.exe">
          <div className="container-certificates">
-
+       
          <div className="titles-certificates">
           <div className="title-page-certificates">Certificates</div>
           
@@ -45,7 +41,6 @@ export function MyCertificates(){
             </div>
            </div>
          
-         
-        </BoxHeader>
+        
     )
 };
