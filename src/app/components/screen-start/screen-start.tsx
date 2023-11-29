@@ -39,16 +39,6 @@ export function Start() {
     
   };
 
-  const showContentDefault = () => {
-    if(componentType == 'certificate' || componentType == 'about' ) {
-      setShowDefaultContent(false);
-    }
-  }
-
-  useEffect(() => {
-    showContentDefault();
-  }, [componentType]);
-
 
   const renderDynamicComponent = () => {
     switch (componentType) {
@@ -62,9 +52,24 @@ export function Start() {
     }
   };
 
+  const showContentDefault = () => {
+    if (componentType === 'certificate') {
+      setShowDefaultContent(false);
+    }
+  }
+
+  useEffect(() => {
+    if (componentType === 'certificate' || componentType === 'about') {
+      setShowDefaultContent(false);
+    } else {
+      setShowDefaultContent(true);
+    }
+  }, [componentType]);
+
+
   return (
     <div className="container-page">
-      
+       
       <BoxHeader
       onButtonClick={(type, label, height) => handleButtonClick(type, label, height)}
       selectedButtonType={selectedButtonType}
