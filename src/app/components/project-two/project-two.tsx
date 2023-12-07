@@ -23,7 +23,7 @@ export function ProjectTwo(){
         <div className="box-general">
 
         <div className="description-project">This is the Front-End project of an API (api-reactgram) made in Java.
-        This project was created and modified while studying Matheus Battisti's React course: a social network for sharing photos.     
+          This project was created and modified while studying Matheus Battisti&apos;s React course: a social network for sharing photos.   
       </div>
 
                

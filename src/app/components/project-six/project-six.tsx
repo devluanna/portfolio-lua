@@ -7,8 +7,8 @@ import { NivelTech } from "../nivel-tech/nivel-tech"
 
 
 const levelsData = [
-    { level: 1, width: '59.2%', color: '#3171BC' },
-    { level: 2, width: '40.7%', color: '#C5528A' },
+    { level: 1, width: '65.9%', color: '#3171BC' },
+    { level: 2, width: '34.0%', color: '#C5528A' },
     { level: 3, width: '0.1%', color: '#FFC61A' },
   ];
 
@@ -43,8 +43,8 @@ export function ProjectSix(){
       </div>
       <div className="legends-techs">
 
-      <LegendLanguage color="#3171BC" label="Typescript 59.2" />
-      <LegendLanguage color="#C5528A" label="SCSS 40.7%" />
+      <LegendLanguage color="#3171BC" label="Typescript 65.9%" />
+      <LegendLanguage color="#C5528A" label="SCSS 34.0%" />
       <LegendLanguage color="#FFC61A" label="Javascript 0.1%" />
       </div>
 
